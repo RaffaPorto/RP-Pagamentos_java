@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Acesso</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RP Pagamentos</h1>
+        <h2>Acesse sua conta</h2>
+        <form id="form-rp">
+            <input id="agencia" type="number" required placeholder="Agência/ Ex: 4 dígitos... "/>
+            <p class="error-message2">
+                Os dígitos precisam somar quatro números
+            </p>
+            <input id="conta" type="number" required placeholder="Conta/ Ex: 8 dígitos..."/>
+            <p class="error-message3">
+                Os dígitos precisam somar oito números
+            </p>
+            <p class="error-message">
+                Dígitos da (Agência) ou (Conta) podem estar incorretos!
+            </p>
+            <button type="submit">Entrar</button> 
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
